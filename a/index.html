@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L2L | Luv to Life</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Gowun+Dodum&family=Nanum+Myeongjo:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#3f352f;--muted:#7f6d63;--paper:#fffdf7;--card:#fffef9;--line:#f7e0c8;--accent:#f06b5d;--accent-2:#f7c95b;--accent-3:#f08fb1;--soft:#fff4e6;--soft-2:#fff0f4;--soft-3:#fff8d8;--danger:#db6052;--uv:#f3b748;--leaf:#5b8f55;--leaf-2:#7da96b;--leaf-3:#dcebc8;--garden:#eaf6e6;--garden-2:#adc98d}*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#fffef8 0%,#f6fde9 42%,#fff3f7 100%);color:var(--ink);font-family:'Gowun Dodum',sans-serif;min-height:100vh}body:before{content:'';position:fixed;inset:0;opacity:.45;pointer-events:none;background-image:radial-gradient(circle,#e4f0b7 1px,transparent 1px),radial-gradient(circle,#f0c0d5 1px,transparent 1px);background-size:18px 18px,22px 22px;background-position:0 0,10px 10px}main{position:relative;max-width:1190px;margin:auto;padding:30px 24px 54px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:35px}.brand-block{display:flex;flex-direction:column;gap:3px}.brand{display:flex;align-items:center;gap:11px;font-family:'Nanum Myeongjo',serif;font-weight:800;font-size:24px;color:var(--accent)}.brand-sub{font-size:12px;color:var(--accent-2);font-family:'DM Mono';letter-spacing:.08em;text-transform:uppercase}.brand-mark{width:34px;height:34px;border:2px solid var(--accent);border-radius:50% 50% 48% 50%;position:relative;transform:rotate(-20deg);box-shadow:0 6px 12px rgba(240,107,93,.16)}.brand-mark:after{content:'';position:absolute;width:13px;height:21px;border-radius:100% 0 100% 0;background:linear-gradient(135deg,var(--accent-2),var(--accent));left:7px;top:3px}.date{font-family:'DM Mono';font-size:12px;color:var(--muted);letter-spacing:.04em}.hero{display:grid;grid-template-columns:1.55fr .9fr;gap:24px;margin-bottom:24px}.hero-copy{padding:22px 8px}.eyebrow{color:var(--accent);font-family:'DM Mono';font-size:12px;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-family:'Nanum Myeongjo',serif;font-size:42px;line-height:1.27;margin:12px 0 13px;letter-spacing:-.05em}.hero p{color:var(--muted);margin:0;font-size:15px;line-height:1.7}.card{background:linear-gradient(135deg,rgba(255,252,247,.98),rgba(255,247,241,.96));border:1px solid var(--line);border-radius:20px;box-shadow:0 12px 28px rgba(209,111,86,.08)}.status-card{padding:23px;position:relative;overflow:hidden;background:linear-gradient(135deg,#fffef8 0%,#fff2e8 100%)}.status-card:after{content:'🌼';position:absolute;right:-5px;top:-20px;font-size:96px;opacity:.2}.mini-label{font-size:13px;color:var(--muted)}.risk-line{display:flex;align-items:end;gap:12px;margin-top:10px}.risk-name{font-family:'Nanum Myeongjo';font-size:29px;color:var(--accent)}.risk-desc{font-size:12px;padding-bottom:5px;color:var(--muted)}.bar{height:7px;border-radius:6px;background:#e7ece3;margin:18px 0 8px;overflow:hidden}.bar span{display:block;height:100%;width:25%;border-radius:inherit;background:var(--accent);transition:.4s}.status-tip{font-size:13px;margin:0;color:var(--ink)}.grid{display:grid;grid-template-columns:1fr 1.05fr .95fr;gap:18px}.panel{padding:22px}.panel h2,.module h2{font-family:'Nanum Myeongjo';font-size:19px;margin:0 0 18px}.lux-value{display:flex;align-items:baseline;gap:6px;margin:2px 0 11px}.lux-value strong{font-family:'DM Mono';font-size:40px;letter-spacing:-.08em}.lux-value span{font-family:'DM Mono';font-size:12px;color:var(--muted)}input[type=range]{width:100%;accent-color:var(--accent);margin:9px 0 17px}.field-label{font-size:12px;color:var(--muted);display:block;margin-bottom:7px}input[type=number]{font:inherit;color:var(--ink);width:100%;padding:11px;border:1px solid var(--line);border-radius:9px;background:#fff}.uv-box{margin-top:18px;background:var(--soft);padding:13px 14px;border-radius:11px;display:flex;align-items:center;justify-content:space-between}.uv-box b{font-family:'DM Mono';font-size:24px}.uv-box small{color:var(--muted)}.choices{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-bottom:16px}.choice{border:1px solid var(--line);background:white;border-radius:8px;padding:8px 3px;text-align:center;font-size:11px;cursor:pointer;transition:.2s}.choice.on{background:var(--soft);border-color:var(--accent);color:#286249;font-weight:bold}.sports{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.sport{cursor:pointer;border:1px solid var(--line);border-radius:8px;background:#fff;padding:8px 3px;font-size:11px;text-align:center}.sport.on{border-color:var(--accent);background:var(--soft)}.time-row{display:flex;gap:7px;margin-top:15px}.time-row button{flex:1;border:1px solid var(--line);background:white;border-radius:8px;padding:8px 3px;font:inherit;font-size:12px;cursor:pointer}.time-row button.on{background:var(--ink);color:white}.recommend{background:#315f51;color:#fff;padding:22px;position:relative;overflow:hidden}.recommend:before{content:'✦';position:absolute;right:13px;top:7px;color:#b7d58d;font-size:45px}.recommend h2{color:#f4f6ec}.rec-time{font-family:'DM Mono';font-size:38px;color:#dbefaa;line-height:1;margin:6px 0}.rec-time span{font-size:14px}.recommend p{font-size:12px;line-height:1.7;color:#d7e5de;margin:13px 0}.warning{background:#f9e3c9;color:#704721;border-radius:8px;padding:8px;font-size:11px;display:none}.mission-plant{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;margin-top:18px}.missions{padding:22px}.mission-list{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.mission{display:flex;align-items:center;gap:8px;background:#fbfaf5;border:1px solid var(--line);padding:11px;border-radius:10px;font-size:12px;cursor:pointer}.mission input{accent-color:var(--accent);width:16px;height:16px}.mission.done{background:var(--soft);color:#306a51}.plant-card{padding:18px;text-align:center;background:linear-gradient(145deg,#f1f7e9,#fdfaf1);position:relative;overflow:hidden}.plant-card h2{font-family:'Nanum Myeongjo';font-size:17px;margin:0}.plant-stage{font-size:12px;color:var(--muted);margin:4px 0}.garden{height:150px;position:relative;display:flex;align-items:flex-end;justify-content:center}.pot{width:75px;height:44px;background:#ca8864;clip-path:polygon(7% 0,93% 0,82% 100%,18% 100%);position:absolute;bottom:8px}.plant{height:106px;width:110px;position:relative;transform-origin:bottom;transition:.5s}.stem{position:absolute;background:#4a915e;width:7px;height:70px;bottom:34px;left:51px;border-radius:9px}.leaf{position:absolute;width:39px;height:21px;background:#67ab63;border-radius:100% 0 100% 0;transition:.4s}.l1{bottom:58px;left:19px;transform:rotate(-21deg)}.l2{bottom:43px;right:15px;transform:rotate(103deg)}.l3{bottom:77px;right:23px;transform:rotate(75deg)}.flower{position:absolute;bottom:94px;left:37px;width:30px;height:30px;border-radius:50%;background:#f2b7c0;box-shadow:13px 0 #f2b7c0,-13px 0 #f2b7c0,0 13px #f2b7c0,0 -13px #f2b7c0;transform:scale(0);transition:.4s}.flower:after{content:'';position:absolute;width:12px;height:12px;background:#f3bd55;border-radius:50%;left:9px;top:9px}.plant.seed .stem,.plant.seed .leaf{transform:scaleY(.08);opacity:0}.plant.seed .leaf{transform:scale(.08)}.plant.sprout{transform:scale(.65)}.plant.big{transform:scale(1.14)}.plant.flowering .flower{transform:scale(.65)}.plant.wilt{animation:wilt .8s infinite alternate;filter:saturate(.45)}.plant.wilt .leaf{background:#afaf5d;transform-origin:right}.growth{height:7px;background:#dce7d7;border-radius:6px;margin:0 14px;overflow:hidden}.growth i{display:block;width:0;height:100%;background:#72a75b;transition:.5s}@keyframes wilt{to{transform:rotate(-9deg) translateY(5px)}}.modules{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}.module{padding:21px}.module p{font-size:12px;line-height:1.65;margin:8px 0;color:var(--muted)}.ai-box{background:#eaf2e5;padding:13px;border-radius:10px;font-size:13px;line-height:1.7}.coin{font:22px 'DM Mono';color:#9b7123}.catalog{display:flex;gap:6px;flex-wrap:wrap}.seed{background:#f4ede0;border-radius:8px;padding:7px;font-size:18px}.social{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:8px 0;font-size:12px}.social b{font-weight:normal}.buy{border:0;border-radius:8px;background:var(--ink);color:#fff;padding:8px 11px;font:12px inherit;cursor:pointer}.formula{font:11px 'DM Mono';color:#d7e5de;line-height:1.6;margin-top:12px}@media(max-width:800px){.hero,.grid,.mission-plant,.modules{grid-template-columns:1fr}.hero-copy{padding:0}.hero h1{font-size:34px}.top{margin-bottom:22px}.grid{gap:14px}}@media(max-width:430px){main{padding:20px 15px}.date{display:none}.choices{grid-template-columns:repeat(2,1fr)}.sports{grid-template-columns:repeat(3,1fr)}.mission-list{grid-template-columns:1fr}.hero h1{font-size:30px}}
+    .uv-box{background:linear-gradient(135deg,var(--soft-3),var(--soft-2));border:1px solid rgba(232,143,180,.18)}
+    .choice.on{background:linear-gradient(135deg,var(--accent-2),var(--accent-3));border-color:var(--accent-3);color:#fff;font-weight:bold}
+    .sport.on{background:linear-gradient(135deg,var(--soft-3),var(--soft-2));border-color:var(--accent-3)}
+    .time-row button.on{background:linear-gradient(135deg,var(--accent-2),var(--accent));color:#fff;border-color:var(--accent)}
+    .recommend{background:linear-gradient(135deg,#f2b84b 0%,#e76b72 48%,#e88fb4 100%);color:#fff;position:relative;overflow:hidden}
+    .recommend .mini-label,.recommend p,.formula{color:#fff9f3}
+    .bar span{background:linear-gradient(90deg,var(--leaf-2),var(--leaf),var(--accent-2));}
+    .buy{background:linear-gradient(135deg,var(--accent-2),var(--leaf));box-shadow:0 8px 16px rgba(81,135,79,.16)}
+    .mission.done{background:linear-gradient(135deg,var(--garden),var(--soft-3));border-color:rgba(91,143,85,.2)}
+    .growth-steps{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin:10px 0 12px}
+    .growth-step{padding:6px 4px;border-radius:999px;background:#f8efe0;font-size:10px;color:#9a7f5d;text-align:center;border:1px solid #efe0ca}
+    .growth-step.active{background:linear-gradient(135deg,var(--leaf-2),var(--leaf));color:#fff;border-color:var(--leaf)}
+    .growth-step.done{background:#e5f4dc;color:#4e7d43;border-color:#cfe6bb}
+    .growth-meta{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.6}
+    .plant-collection{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:10px}
+    .plant-option{padding:8px;border-radius:10px;border:1px solid var(--line);background:#fffdf8;text-align:left;font-size:11px;cursor:pointer}
+    .plant-option.active{border-color:var(--leaf);box-shadow:0 0 0 2px rgba(91,143,85,.12)}
+    .plant-option.locked{opacity:.65;cursor:not-allowed}
+    .plant-option .emoji{font-size:16px;margin-right:4px}
+    .text-link{display:inline-block;margin-top:8px;font-size:12px;color:var(--leaf);font-weight:700;text-decoration:none}
+    .text-link:hover{text-decoration:underline}
+    .plant--sunflower .stem{height:76px;background:#4e7d4a}
+    .plant--sunflower .leaf{background:#6fa65a}
+    .plant--sunflower .flower{transform:scale(.72);background:#ffb84d;box-shadow:15px 0 #ffb84d,-15px 0 #ffb84d,0 15px #ffb84d,0 -15px #ffb84d}
+    .plant--rose .stem{height:74px;background:#4f704c}
+    .plant--rose .leaf{background:#67a66a}
+    .plant--rose .flower{transform:scale(.74);background:#ff6b87;box-shadow:14px 0 #ff6b87,-14px 0 #ff6b87,0 14px #ff6b87,0 -14px #ff6b87}
+    .plant--cactus .stem{height:60px;background:#4a7e43;clip-path:polygon(30% 0,70% 0,100% 25%,100% 100%,0 100%,0 25%)}
+    .plant--cactus .leaf{display:none}
+    .plant--cactus .flower{transform:scale(.6);background:#f4a8a8}
+    .plant--bamboo .stem{height:86px;background:#3d7240}
+    .plant--bamboo .leaf{background:#6ea85c}
+    .plant--bamboo .leaf.l2,.plant--bamboo .leaf.l3{transform:rotate(45deg) scale(.95)}
+    .plant--bamboo .flower{transform:scale(.35);background:#f4d87c}
+  </style>
+</head>
+<body>
+<main>
+  <header class="top"><div class="brand-block"><div class="brand"><i class="brand-mark"></i>L2L</div><div class="brand-sub">Luv to Life</div></div><div class="date" id="today"></div></header>
+  <section class="hero"><div class="hero-copy"><div class="eyebrow">Sun-smart outdoor activity</div><h1>오늘의 햇살,<br>건강하게 즐겨요.</h1><p>주변 밝기와 나의 컨디션을 살펴보고<br>지금 딱 알맞은 야외 운동을 시작해 보세요.</p><div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px"><a href="http://127.0.0.1:8000/index.html" target="_blank" rel="noopener" style="display:inline-block;padding:10px 14px;border-radius:999px;background:linear-gradient(135deg,var(--leaf),var(--accent));color:#fff;text-decoration:none;font-weight:700">앱 바로 들어가기</a><a href="http://127.0.0.1:8000/index.html" target="_blank" rel="noopener" class="text-link">로컬 미리보기 열기</a></div></div><article class="card status-card"><span class="mini-label">현재 자외선 위험 단계</span><div class="risk-line"><strong class="risk-name" id="riskName">안전</strong><span class="risk-desc" id="riskDesc">가벼운 야외 활동에 좋아요</span></div><div class="bar"><span id="riskBar"></span></div><p class="status-tip" id="statusTip">햇살을 즐기기 좋은 시간이에요.</p></article></section>
+  <section class="grid">
+    <article class="card panel"><h2>주변 밝기</h2><span class="mini-label">현재 조도</span><div class="lux-value"><strong id="luxText">2,400</strong><span>Lux</span></div><input type="range" id="luxRange" min="0" max="100000" step="100" value="2400"><label class="field-label" for="luxInput">직접 조도 입력 (Lux)</label><input id="luxInput" type="number" min="0" max="100000" value="2400"><div class="uv-box"><small>예상 UV Index</small><b id="uvText">1.2</b></div></article>
+    <article class="card panel"><h2>날씨 컨디션</h2><label class="field-label" for="tempRange">현재 온도 <b id="tempText" style="color:var(--ink)">24°C</b></label><input type="range" id="tempRange" min="-10" max="42" value="24"><label class="field-label" for="humidityRange">현재 습도 <b id="humidityText" style="color:var(--ink)">55%</b></label><input type="range" id="humidityRange" min="10" max="100" value="55"><div class="uv-box"><small>날씨 상태</small><b id="weatherIcon" style="font-size:21px">☀️</b></div><p id="weatherTip" style="font-size:12px;line-height:1.6;margin:12px 0 0;color:var(--muted)">쾌적한 야외 운동 날씨예요.</p></article>
+    <article class="card panel"><h2>나의 운동 정보</h2><span class="field-label">피부 민감도</span><div class="choices" id="skins"><button class="choice" data-skin="very">매우 민감</button><button class="choice on" data-skin="sensitive">민감</button><button class="choice" data-skin="normal">보통</button><button class="choice" data-skin="strong">강함</button></div><span class="field-label">운동 종목</span><div class="sports" id="sports"><button class="sport on" data-met="3.5" data-level="0" data-desc="기준 운동">걷기</button><button class="sport" data-met="5" data-level="1" data-desc="걷기보다 약간 높은 강도">빠른 걷기</button><button class="sport" data-met="6.8" data-level="2" data-desc="지속적인 유산소 운동">자전거</button><button class="sport" data-met="8.3" data-level="3" data-desc="중~고강도 유산소">조깅</button><button class="sport" data-met="7.5" data-level="3" data-desc="경사에 따라 조깅과 비슷">등산</button><button class="sport" data-met="7.3" data-level="3" data-desc="이동량이 많음">테니스</button><button class="sport" data-met="8" data-level="4" data-desc="점프와 방향 전환이 많음">농구</button><button class="sport" data-met="8.8" data-level="5" data-desc="지속적인 달리기와 스프린트 포함">축구</button><button class="sport" data-met="8" data-level="4" data-desc="민첩한 움직임 반복">배드민턴</button><button class="sport" data-met="4.5" data-level="1" data-desc="활동량은 있지만 휴식 시간이 있음">배구</button><button class="sport" data-met="8" data-level="4" data-desc="전신 운동">수영</button><button class="sport" data-met="11" data-level="6" data-desc="매우 높은 강도">줄넘기</button><button class="sport" data-met="10" data-level="6" data-desc="고강도 유산소">달리기</button></div><div class="uv-box" style="margin-top:11px"><small id="sportMeta">MET 3.5 · 상대 강도 0<br>기준 운동</small><b id="intensityText" style="font-size:14px">저강도</b></div><div class="time-row" id="times"><button data-time="20">20분</button><button class="on" data-time="40">40분</button><button data-time="60">60분</button></div><div class="profile-grid" style="margin-top:12px;display:grid;gap:8px"><label class="field-label" for="nicknameInput">닉네임</label><input id="nicknameInput" placeholder="닉네임을 입력하세요" /><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><label class="field-label" for="genderSelect">성별</label><label class="field-label" for="ageInput">나이</label><select id="genderSelect"><option value="male">남성</option><option value="female">여성</option></select><input id="ageInput" type="number" min="13" max="100" value="25" /></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><label class="field-label" for="heightInput">키(cm)</label><label class="field-label" for="weightInput">몸무게(kg)</label><input id="heightInput" type="number" min="100" max="220" value="170" /><input id="weightInput" type="number" min="30" max="200" value="60" /></div></div></article>
+    <article class="card recommend"><h2>오늘의 맞춤 가이드</h2><div class="mini-label" style="color:#b8d0c5">최종 권장 운동 시간</div><div class="rec-time"><b id="recTime">45</b><span>분 이내</span></div><p id="recText">가벼운 활동으로 시작해 보세요.<br>운동 전 선크림과 물을 챙겨주세요.</p><div class="warning" id="warning">예정 시간이 권장 시간을 초과해요. 휴식 시간을 꼭 확보하세요!</div><div class="formula" id="formulaText">60 - 강도 0×5 - UV 1×3 - 피부 10 + 선크림 0</div></article>
+  </section>
+  <section class="mission-plant"><article class="card missions"><h2>오늘의 건강 미션 <span id="missionCount" style="font:12px 'DM Mono';color:var(--accent)">0 / 4</span></h2><div class="mission-list"><label class="mission"><input type="checkbox">운동 전 물 한 잔 마시기</label><label class="mission"><input type="checkbox">자외선 차단제 바르기</label><label class="mission"><input type="checkbox">운동 후 수분 보충하기</label><label class="mission"><input type="checkbox">그늘에서 충분히 휴식하기</label></div></article><article class="card plant-card"><h2>나의 건강 정원</h2><p class="plant-stage" id="plantStage">씨앗을 심었어요</p><div class="growth-steps" id="growthSteps"></div><div class="garden"><div class="plant seed" id="plant"><div class="stem"></div><div class="leaf l1"></div><div class="leaf l2"></div><div class="leaf l3"></div><div class="flower"></div></div><div class="pot"></div></div><div class="growth"><i id="growthBar"></i></div><div class="growth-meta" id="growthMeta">미션을 완료하면 새싹이 돋아요.</div><div class="plant-collection" id="plantCollection"></div><a class="text-link" href="#plantCollection">식물 도감 바로가기</a></article></section>
+  <section class="modules">
+    <article class="card module"><h2>AI 운동·시간 예측</h2><div class="ai-box" id="aiWorkout">분석 중...</div><p id="forecast">오후 UV 흐름을 분석하고 있어요.</p></article>
+    <article class="card module"><h2>피부 건강 케어</h2><div class="social"><b>예상 자외선 노출량</b><strong id="exposure">낮음</strong></div><div class="social"><b>피부 손상 위험</b><strong id="skinRisk">낮음</strong></div><div class="social"><b>추천 차단제</b><strong id="sunscreen">SPF 30+</strong></div><p id="reapply">운동 전 20분에 바르고 2시간 후 덧바르세요.</p></article>
+    <article class="card module"><h2>탄소중립 운동</h2><label class="field-label">오늘 이동 거리 <b id="distanceText">5 km</b></label><input type="range" id="distanceRange" min="0" max="20" value="5"><div class="ai-box">자동차 대신 <b id="carbon">850g</b> CO₂를 절감했어요.<br>걷기와 자전거는 식물 성장에 보너스를 줍니다.</div></article>
+    <article class="card module"><h2>식물 도감 · 컬렉션</h2><div class="catalog"><span class="seed">🌱</span><span class="seed">🌿</span><span class="seed">🌵</span><span class="seed">🌻</span><span class="seed">🔒</span><span class="seed">🔒</span></div><p id="collectionIntro"><b id="seedCount">새 씨앗 0개</b> · 도감 <span id="plantCount">1 / 50종</span><br>일반 식물은 미션과 Green Coin으로, 희귀한 꽃은 특별한 조건과 확률로 열립니다. <a class="text-link" href="#plantCollection">도감 전체 보기</a></p></article>
+    <article class="card module"><h2>Green Coin 상점</h2><div class="coin"><span id="coins">120</span> GC</div><p>미션 하나당 10 GC, 전체 완료 보너스 30 GC</p><button class="buy" id="buyPot">새 화분 구매 · 80 GC</button><p id="shopMessage"></p></article>
+    <article class="card module"><h2>친구 정원</h2><div id="friendList" style="display:grid;gap:8px;margin-bottom:8px"></div><div class="social"><b>이번 주 랭킹</b><strong id="rankingText">1위</strong></div><div class="social" style="display:grid;gap:8px"><input id="friendInput" placeholder="친구 닉네임" style="padding:8px;border:1px solid var(--line);border-radius:8px" /><div style="display:flex;gap:8px"><button class="buy" id="friendRequestBtn" style="flex:1">친구 요청</button><button class="buy" id="waterFriendBtn" style="flex:1">오늘 물 주기</button></div><div id="friendMessage" style="font-size:12px;color:var(--muted)"></div></div><p>친구에게 식물 선물을 보내고 함께 미션을 달성해 보세요.</p></article>
+  </section>
+</main>
+<script src="src/utils/calculateUV.js"></script>
+<script src="src/utils/calculateUVLevel.js"></script>
+<script src="src/utils/getUVFactor.js"></script>
+<script src="src/utils/calculateBMI.js"></script>
+<script src="src/utils/getBMIFactor.js"></script>
+<script src="src/utils/getSkinFactor.js"></script>
+<script src="src/utils/getAgeFactor.js"></script>
+<script src="src/utils/getGenderFactor.js"></script>
+<script src="src/utils/getExerciseIntensity.js"></script>
+<script src="src/utils/calculateExerciseFactor.js"></script>
+<script src="src/utils/calculateRiskScore.js"></script>
+<script src="src/utils/calculateAccumulatedUV.js"></script>
+<script src="src/utils/calculateRemainingTime.js"></script>
+<script src="src/utils/calculateRiskLevel.js"></script>
+<script src="src/utils/calculatePlantStatus.js"></script>
+<script src="src/utils/applyMissionBonus.js"></script>
+<script src="src/utils/generateDailyMission.js"></script>
+<script src="src/utils/friendSystem.js"></script>
+<script src="src/utils/userStorage.js"></script>
+<script>
+  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+  const levels=[{name:'안전',max:2,color:'#4e8c72',desc:'가벼운 야외 활동에 좋아요',tip:'햇살을 즐기기 좋은 시간이에요.'},{name:'보통',max:5,color:'#d19a37',desc:'자외선 차단을 준비해요',tip:'선크림을 바르고 활동하세요.'},{name:'주의',max:7,color:'#e7803c',desc:'피부 보호가 필요해요',tip:'그늘 휴식과 수분 보충을 권장해요.'},{name:'위험',max:10,color:'#db6052',desc:'노출 시간을 줄여요',tip:'강한 햇살이에요. 외출 시 보호 장비를 사용하세요.'},{name:'매우 위험',max:99,color:'#983e5d',desc:'야외 활동은 가급적 피하세요',tip:'강한 자외선입니다. 실내 활동을 권장해요.'}];
+  const defaultUserData={nickname:'',gender:'male',age:25,height:170,weight:60,skin:'sensitive',exerciseType:'걷기',exerciseTime:40,lux:2400,temp:24,humidity:55,missions:generateDailyMission(),missionCycle:0,totalMissions:0,coins:120,friends:[],cheer:'',ownedPlants:['basic'],selectedPlant:'basic',spentCoins:0,lastUpdated:Date.now()};
+  const userData=loadUserData()||defaultUserData;
+  const plantLibrary=[{id:'basic',name:'기본 씨앗',icon:'🌱',unlockScore:0,cssClass:'basic',stemColor:'#4a915e',leafColor:'#67ab63',flowerColor:'#f2b7c0',flowerShadow:'14px 0 #f2b7c0,-14px 0 #f2b7c0,0 14px #f2b7c0,0 -14px #f2b7c0',flowerScale:'0.65',flowerCenterColor:'#f3bd55',stemHeight:'70px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'sunflower',name:'해바라기',icon:'🌻',unlockScore:40,cssClass:'sunflower',stemColor:'#4e7d4a',leafColor:'#6fa65a',flowerColor:'#ffb84d',flowerShadow:'15px 0 #ffb84d,-15px 0 #ffb84d,0 15px #ffb84d,0 -15px #ffb84d',flowerScale:'0.72',flowerCenterColor:'#f7d36a',stemHeight:'76px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'rose',name:'장미',icon:'🌹',unlockScore:70,cssClass:'rose',stemColor:'#4f704c',leafColor:'#67a66a',flowerColor:'#ff6b87',flowerShadow:'14px 0 #ff6b87,-14px 0 #ff6b87,0 14px #ff6b87,0 -14px #ff6b87',flowerScale:'0.74',flowerCenterColor:'#f8c14a',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'cactus',name:'선인장',icon:'🌵',unlockScore:90,cssClass:'cactus',stemColor:'#4a7e43',leafColor:'#7fb569',flowerColor:'#f4a8a8',flowerShadow:'12px 0 #f4a8a8,-12px 0 #f4a8a8,0 12px #f4a8a8,0 -12px #f4a8a8',flowerScale:'0.6',flowerCenterColor:'#ffd8a8',stemHeight:'60px',stemWidth:'34px',leafDisplay:'none',stemClipPath:'polygon(30% 0,70% 0,100% 25%,100% 100%,0 100%,0 25%)'},{id:'bamboo',name:'대나무',icon:'🎋',unlockScore:100,cssClass:'bamboo',stemColor:'#3d7240',leafColor:'#6ea85c',flowerColor:'#f4d87c',flowerShadow:'10px 0 #f4d87c,-10px 0 #f4d87c,0 10px #f4d87c,0 -10px #f4d87c',flowerScale:'0.35',flowerCenterColor:'#ffefaa',stemHeight:'86px',stemWidth:'6px',leafDisplay:'block',stemClipPath:'none'},{id:'cherry',name:'벚꽃',icon:'🌸',unlockScore:120,cssClass:'cherry',stemColor:'#4f8555',leafColor:'#7fac68',flowerColor:'#f7a5c0',flowerShadow:'12px 0 #f7a5c0,-12px 0 #f7a5c0,0 12px #f7a5c0,0 -12px #f7a5c0',flowerScale:'0.68',flowerCenterColor:'#ffd5b3',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'dandelion',name:'민들레',icon:'🌼',unlockScore:140,cssClass:'dandelion',stemColor:'#518e4a',leafColor:'#73a95e',flowerColor:'#f6d055',flowerShadow:'10px 0 #f6d055,-10px 0 #f6d055,0 10px #f6d055,0 -10px #f6d055',flowerScale:'0.7',flowerCenterColor:'#ffe39a',stemHeight:'68px',stemWidth:'6px',leafDisplay:'block',stemClipPath:'none'},{id:'tulip',name:'튤립',icon:'🌷',unlockScore:160,cssClass:'tulip',stemColor:'#4c7b42',leafColor:'#6ea15b',flowerColor:'#f06b5d',flowerShadow:'12px 0 #f06b5d,-12px 0 #f06b5d,0 12px #f06b5d,0 -12px #f06b5d',flowerScale:'0.72',flowerCenterColor:'#ffcf68',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'lilac',name:'라일락',icon:'🪻',unlockScore:180,cssClass:'lilac',stemColor:'#496d41',leafColor:'#6f9b5f',flowerColor:'#b58bd8',flowerShadow:'11px 0 #b58bd8,-11px 0 #b58bd8,0 11px #b58bd8,0 -11px #b58bd8',flowerScale:'0.66',flowerCenterColor:'#f1d3ff',stemHeight:'70px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'hydrangea',name:'수국',icon:'💐',unlockScore:200,cssClass:'hydrangea',stemColor:'#4e7c46',leafColor:'#7aa866',flowerColor:'#8ab7ff',flowerShadow:'11px 0 #8ab7ff,-11px 0 #8ab7ff,0 11px #8ab7ff,0 -11px #8ab7ff',flowerScale:'0.74',flowerCenterColor:'#fff0b8',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'lily',name:'백합',icon:'🪷',unlockScore:220,cssClass:'lily',stemColor:'#47743d',leafColor:'#6c9d5d',flowerColor:'#f4d7a1',flowerShadow:'12px 0 #f4d7a1,-12px 0 #f4d7a1,0 12px #f4d7a1,0 -12px #f4d7a1',flowerScale:'0.7',flowerCenterColor:'#efb54f',stemHeight:'76px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'aster',name:'애스터',icon:'🌺',unlockScore:240,cssClass:'aster',stemColor:'#4f7747',leafColor:'#7aa767',flowerColor:'#d58ce8',flowerShadow:'13px 0 #d58ce8,-13px 0 #d58ce8,0 13px #d58ce8,0 -13px #d58ce8',flowerScale:'0.68',flowerCenterColor:'#ffe9a7',stemHeight:'70px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'cosmos',name:'코스모스',icon:'🌾',unlockScore:260,cssClass:'cosmos',stemColor:'#4a7f46',leafColor:'#7eaa6a',flowerColor:'#f2a65a',flowerShadow:'12px 0 #f2a65a,-12px 0 #f2a65a,0 12px #f2a65a,0 -12px #f2a65a',flowerScale:'0.7',flowerCenterColor:'#ffd68b',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'marigold',name:'메리골드',icon:'🌻',unlockScore:280,cssClass:'marigold',stemColor:'#4c7941',leafColor:'#7ba965',flowerColor:'#f7b53a',flowerShadow:'13px 0 #f7b53a,-13px 0 #f7b53a,0 13px #f7b53a,0 -13px #f7b53a',flowerScale:'0.72',flowerCenterColor:'#ffd987',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'hyacinth',name:'히야신스',icon:'🌿',unlockScore:300,cssClass:'hyacinth',stemColor:'#4d7f43',leafColor:'#7aaa64',flowerColor:'#79a4ff',flowerShadow:'12px 0 #79a4ff,-12px 0 #79a4ff,0 12px #79a4ff,0 -12px #79a4ff',flowerScale:'0.68',flowerCenterColor:'#e9d6ff',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'camomile',name:'카모마일',icon:'🌼',unlockScore:320,cssClass:'camomile',stemColor:'#4f7c46',leafColor:'#7aa96f',flowerColor:'#f3e6a0',flowerShadow:'11px 0 #f3e6a0,-11px 0 #f3e6a0,0 11px #f3e6a0,0 -11px #f3e6a0',flowerScale:'0.66',flowerCenterColor:'#f8d670',stemHeight:'70px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'poinsettia',name:'포인세티아',icon:'🌺',unlockScore:340,cssClass:'poinsettia',stemColor:'#4d743f',leafColor:'#6e9a5b',flowerColor:'#d44b5a',flowerShadow:'13px 0 #d44b5a,-13px 0 #d44b5a,0 13px #d44b5a,0 -13px #d44b5a',flowerScale:'0.72',flowerCenterColor:'#ffd081',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'geranium',name:'제라늄',icon:'🌺',unlockScore:360,cssClass:'geranium',stemColor:'#49713b',leafColor:'#6f9f5e',flowerColor:'#ff8e8e',flowerShadow:'12px 0 #ff8e8e,-12px 0 #ff8e8e,0 12px #ff8e8e,0 -12px #ff8e8e',flowerScale:'0.68',flowerCenterColor:'#ffe5a3',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'lotus',name:'연꽃',icon:'🪷',unlockScore:380,cssClass:'lotus',stemColor:'#3d6b39',leafColor:'#72a559',flowerColor:'#f3a3c4',flowerShadow:'13px 0 #f3a3c4,-13px 0 #f3a3c4,0 13px #f3a3c4,0 -13px #f3a3c4',flowerScale:'0.76',flowerCenterColor:'#fdd97e',stemHeight:'78px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'orchid',name:'난초',icon:'🪴',unlockScore:400,cssClass:'orchid',stemColor:'#4b6e3f',leafColor:'#7ba962',flowerColor:'#c08ffa',flowerShadow:'11px 0 #c08ffa,-11px 0 #c08ffa,0 11px #c08ffa,0 -11px #c08ffa',flowerScale:'0.66',flowerCenterColor:'#ffe8c5',stemHeight:'70px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'snowdrop',name:'은방울꽃',icon:'🌱',unlockScore:420,cssClass:'snowdrop',stemColor:'#4d7d48',leafColor:'#79aa66',flowerColor:'#f2f2ff',flowerShadow:'10px 0 #f2f2ff,-10px 0 #f2f2ff,0 10px #f2f2ff,0 -10px #f2f2ff',flowerScale:'0.64',flowerCenterColor:'#d8b8ff',stemHeight:'68px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'magnolia',name:'목련',icon:'🌼',unlockScore:440,cssClass:'magnolia',stemColor:'#4a7041',leafColor:'#79ab67',flowerColor:'#f7c0d5',flowerShadow:'12px 0 #f7c0d5,-12px 0 #f7c0d5,0 12px #f7c0d5,0 -12px #f7c0d5',flowerScale:'0.72',flowerCenterColor:'#ffd19e',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'eucalyptus',name:'유칼립투스',icon:'🌿',unlockScore:460,cssClass:'eucalyptus',stemColor:'#4c7d43',leafColor:'#7ca96b',flowerColor:'#9ad18f',flowerShadow:'10px 0 #9ad18f,-10px 0 #9ad18f,0 10px #9ad18f,0 -10px #9ad18f',flowerScale:'0.62',flowerCenterColor:'#f8e5a0',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'rosemary',name:'로즈마리',icon:'🌿',unlockScore:480,cssClass:'rosemary',stemColor:'#4e7a45',leafColor:'#7ca66b',flowerColor:'#bde5a4',flowerShadow:'10px 0 #bde5a4,-10px 0 #bde5a4,0 10px #bde5a4,0 -10px #bde5a4',flowerScale:'0.62',flowerCenterColor:'#f3d17a',stemHeight:'68px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'basil',name:'바질',icon:'🌿',unlockScore:500,cssClass:'basil',stemColor:'#4c7b42',leafColor:'#7ea96c',flowerColor:'#f6c96d',flowerShadow:'10px 0 #f6c96d,-10px 0 #f6c96d,0 10px #f6c96d,0 -10px #f6c96d',flowerScale:'0.64',flowerCenterColor:'#fce9b5',stemHeight:'70px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'orangeblossom',name:'오렌지꽃',icon:'🌼',unlockScore:520,cssClass:'orangeblossom',stemColor:'#4b7a44',leafColor:'#7ba968',flowerColor:'#ffd066',flowerShadow:'11px 0 #ffd066,-11px 0 #ffd066,0 11px #ffd066,0 -11px #ffd066',flowerScale:'0.68',flowerCenterColor:'#fff0b5',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'daisy',name:'데이지',icon:'🌼',unlockScore:540,cssClass:'daisy',stemColor:'#4f7c46',leafColor:'#7daa6b',flowerColor:'#fff6d0',flowerShadow:'11px 0 #fff6d0,-11px 0 #fff6d0,0 11px #fff6d0,0 -11px #fff6d0',flowerScale:'0.66',flowerCenterColor:'#f4db88',stemHeight:'70px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'lavender',name:'라벤더',icon:'🌿',unlockScore:560,cssClass:'lavender',stemColor:'#4e7444',leafColor:'#7ca96c',flowerColor:'#c7b3ff',flowerShadow:'11px 0 #c7b3ff,-11px 0 #c7b3ff,0 11px #c7b3ff,0 -11px #c7b3ff',flowerScale:'0.66',flowerCenterColor:'#ffe8a6',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'hibiscus',name:'무궁화',icon:'🌺',unlockScore:580,cssClass:'hibiscus',stemColor:'#49753e',leafColor:'#74a65f',flowerColor:'#ff7f8c',flowerShadow:'13px 0 #ff7f8c,-13px 0 #ff7f8c,0 13px #ff7f8c,0 -13px #ff7f8c',flowerScale:'0.74',flowerCenterColor:'#ffd27a',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'azalea',name:'진달래',icon:'🌺',unlockScore:600,cssClass:'azalea',stemColor:'#4a733f',leafColor:'#79ab62',flowerColor:'#ff9d6b',flowerShadow:'12px 0 #ff9d6b,-12px 0 #ff9d6b,0 12px #ff9d6b,0 -12px #ff9d6b',flowerScale:'0.7',flowerCenterColor:'#ffe4af',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'iris',name:'붓꽃',icon:'🌸',unlockScore:620,cssClass:'iris',stemColor:'#4b7d43',leafColor:'#7da96d',flowerColor:'#6b9bff',flowerShadow:'11px 0 #6b9bff,-11px 0 #6b9bff,0 11px #6b9bff,0 -11px #6b9bff',flowerScale:'0.68',flowerCenterColor:'#ffedbc',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'peony',name:'모란',icon:'🌷',unlockScore:640,cssClass:'peony',stemColor:'#49713d',leafColor:'#74a55f',flowerColor:'#ff7aa2',flowerShadow:'13px 0 #ff7aa2,-13px 0 #ff7aa2,0 13px #ff7aa2,0 -13px #ff7aa2',flowerScale:'0.74',flowerCenterColor:'#ffe7a1',stemHeight:'76px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'snapdragon',name:'금어초',icon:'🌼',unlockScore:660,cssClass:'snapdragon',stemColor:'#4c773f',leafColor:'#78a865',flowerColor:'#ffcd6d',flowerShadow:'12px 0 #ffcd6d,-12px 0 #ffcd6d,0 12px #ffcd6d,0 -12px #ffcd6d',flowerScale:'0.7',flowerCenterColor:'#ffe8b8',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'sweetpea',name:'나팔꽃',icon:'🌸',unlockScore:680,cssClass:'sweetpea',stemColor:'#4a7140',leafColor:'#7ba96d',flowerColor:'#f2b1d5',flowerShadow:'12px 0 #f2b1d5,-12px 0 #f2b1d5,0 12px #f2b1d5,0 -12px #f2b1d5',flowerScale:'0.66',flowerCenterColor:'#f7df9d',stemHeight:'70px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'bluebell',name:'블루벨',icon:'🌼',unlockScore:700,cssClass:'bluebell',stemColor:'#4d7b44',leafColor:'#7da96d',flowerColor:'#7ba8ff',flowerShadow:'11px 0 #7ba8ff,-11px 0 #7ba8ff,0 11px #7ba8ff,0 -11px #7ba8ff',flowerScale:'0.68',flowerCenterColor:'#fbe6a4',stemHeight:'70px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'camellia',name:'동백',icon:'🌺',unlockScore:720,cssClass:'camellia',stemColor:'#4a6f40',leafColor:'#76a562',flowerColor:'#ff8b98',flowerShadow:'12px 0 #ff8b98,-12px 0 #ff8b98,0 12px #ff8b98,0 -12px #ff8b98',flowerScale:'0.72',flowerCenterColor:'#ffd18f',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'lupine',name:'루피너스',icon:'🌷',unlockScore:740,cssClass:'lupine',stemColor:'#4b763f',leafColor:'#7aa969',flowerColor:'#7ec2ff',flowerShadow:'11px 0 #7ec2ff,-11px 0 #7ec2ff,0 11px #7ec2ff,0 -11px #7ec2ff',flowerScale:'0.68',flowerCenterColor:'#f1d8a5',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'forgetmenot',name:'브로멧',icon:'🌼',unlockScore:760,cssClass:'forgetmenot',stemColor:'#4f813f',leafColor:'#7da76e',flowerColor:'#8cb2ff',flowerShadow:'10px 0 #8cb2ff,-10px 0 #8cb2ff,0 10px #8cb2ff,0 -10px #8cb2ff',flowerScale:'0.64',flowerCenterColor:'#ffe7a2',stemHeight:'70px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'alstroemeria',name:'알스트로에메리아',icon:'🌸',unlockScore:780,cssClass:'alstroemeria',stemColor:'#47733c',leafColor:'#79a465',flowerColor:'#f5a1c7',flowerShadow:'11px 0 #f5a1c7,-11px 0 #f5a1c7,0 11px #f5a1c7,0 -11px #f5a1c7',flowerScale:'0.68',flowerCenterColor:'#ffe08f',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'fuchsia',name:'후크시아',icon:'🌺',unlockScore:800,cssClass:'fuchsia',stemColor:'#4a733d',leafColor:'#77a563',flowerColor:'#ff6fb8',flowerShadow:'12px 0 #ff6fb8,-12px 0 #ff6fb8,0 12px #ff6fb8,0 -12px #ff6fb8',flowerScale:'0.7',flowerCenterColor:'#ffd182',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'mint',name:'민트',icon:'🌿',unlockScore:820,cssClass:'mint',stemColor:'#4c7a44',leafColor:'#76aa63',flowerColor:'#b8e0a5',flowerShadow:'10px 0 #b8e0a5,-10px 0 #b8e0a5,0 10px #b8e0a5,0 -10px #b8e0a5',flowerScale:'0.58',flowerCenterColor:'#ffe7a6',stemHeight:'68px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'ivy',name:'아이비',icon:'🍃',unlockScore:840,cssClass:'ivy',stemColor:'#4b743f',leafColor:'#77a666',flowerColor:'#7bcf8f',flowerShadow:'11px 0 #7bcf8f,-11px 0 #7bcf8f,0 11px #7bcf8f,0 -11px #7bcf8f',flowerScale:'0.6',flowerCenterColor:'#ffd88d',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'agapanthus',name:'아가판투스',icon:'🌼',unlockScore:860,cssClass:'agapanthus',stemColor:'#4d7b45',leafColor:'#78a667',flowerColor:'#7dc7ff',flowerShadow:'12px 0 #7dc7ff,-12px 0 #7dc7ff,0 12px #7dc7ff,0 -12px #7dc7ff',flowerScale:'0.68',flowerCenterColor:'#fff0b5',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'poppy',name:'양귀비',icon:'🌺',unlockScore:880,cssClass:'poppy',stemColor:'#4e7c44',leafColor:'#7ba76a',flowerColor:'#ff6f6f',flowerShadow:'13px 0 #ff6f6f,-13px 0 #ff6f6f,0 13px #ff6f6f,0 -13px #ff6f6f',flowerScale:'0.72',flowerCenterColor:'#ffd27d',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'begonia',name:'베고니아',icon:'🌺',unlockScore:900,cssClass:'begonia',stemColor:'#4b723e',leafColor:'#74a660',flowerColor:'#ff9fae',flowerShadow:'12px 0 #ff9fae,-12px 0 #ff9fae,0 12px #ff9fae,0 -12px #ff9fae',flowerScale:'0.7',flowerCenterColor:'#f2cb67',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'zinnia',name:'지닐리아',icon:'🌼',unlockScore:920,cssClass:'zinnia',stemColor:'#4f8047',leafColor:'#79a96b',flowerColor:'#ffa64d',flowerShadow:'12px 0 #ffa64d,-12px 0 #ffa64d,0 12px #ffa64d,0 -12px #ffa64d',flowerScale:'0.7',flowerCenterColor:'#fff2b0',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'calla',name:'칼라',icon:'🌼',unlockScore:940,cssClass:'calla',stemColor:'#4c7841',leafColor:'#78a769',flowerColor:'#f4c9a8',flowerShadow:'11px 0 #f4c9a8,-11px 0 #f4c9a8,0 11px #f4c9a8,0 -11px #f4c9a8',flowerScale:'0.68',flowerCenterColor:'#f7d26f',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'gerbera',name:'거베라',icon:'🌼',unlockScore:960,cssClass:'gerbera',stemColor:'#4a713d',leafColor:'#76a65f',flowerColor:'#ff7db1',flowerShadow:'13px 0 #ff7db1,-13px 0 #ff7db1,0 13px #ff7db1,0 -13px #ff7db1',flowerScale:'0.74',flowerCenterColor:'#ffd782',stemHeight:'74px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'carnation',name:'카네이션',icon:'🌸',unlockScore:980,cssClass:'carnation',stemColor:'#4e7944',leafColor:'#7aa86b',flowerColor:'#ff8ea5',flowerShadow:'12px 0 #ff8ea5,-12px 0 #ff8ea5,0 12px #ff8ea5,0 -12px #ff8ea5',flowerScale:'0.7',flowerCenterColor:'#ffe7aa',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'},{id:'foxglove',name:'폭스글로브',icon:'🌼',unlockScore:1000,cssClass:'foxglove',stemColor:'#4c7440',leafColor:'#7aa86b',flowerColor:'#8f7bff',flowerShadow:'11px 0 #8f7bff,-11px 0 #8f7bff,0 11px #8f7bff,0 -11px #8f7bff',flowerScale:'0.68',flowerCenterColor:'#ffd9a0',stemHeight:'72px',stemWidth:'7px',leafDisplay:'block',stemClipPath:'none'}];
+  const defaultPlantMeta={rarity:'일반',grade:'C',unlockType:'missions',unlockValue:1,unlockChance:80,unlockHint:'미션을 조금 더 채우면 열립니다.',unlockText:'기본 조건으로 열리는 식물'};
+  const plantUnlockMeta={basic:{rarity:'기본',grade:'S',unlockType:'default',unlockValue:0,unlockChance:100,unlockHint:'처음부터 준비된 씨앗이에요.',unlockText:'바로 사용할 수 있는 기본 식물'},sunflower:{rarity:'일반',grade:'C',unlockType:'missions',unlockValue:1,unlockChance:92,unlockHint:'미션 1개를 완료하면 열릴 확률이 높아요.',unlockText:'미션 1개로 쉽게 발견돼요'},rose:{rarity:'일반',grade:'C',unlockType:'missions',unlockValue:2,unlockChance:88,unlockHint:'미션 2개를 완료하면 더 자주 나타나요.',unlockText:'꾸준한 루틴으로 모을 수 있어요'},cactus:{rarity:'일반',grade:'C',unlockType:'missions',unlockValue:3,unlockChance:84,unlockHint:'미션 3개를 완료하면 열릴 가능성이 올라가요.',unlockText:'튼튼한 생김새의 기본 등급'},bamboo:{rarity:'일반',grade:'C',unlockType:'missions',unlockValue:4,unlockChance:80,unlockHint:'미션 4개를 완료하면 열릴 가능성이 올라가요.',unlockText:'무난하게 모을 수 있는 식물'},cherry:{rarity:'일반',grade:'B',unlockType:'missions',unlockValue:5,unlockChance:76,unlockHint:'미션 5개를 완료하면 희귀함이 올라가요.',unlockText:'봄기운을 닮은 봄꽃 등급'},dandelion:{rarity:'일반',grade:'B',unlockType:'missions',unlockValue:6,unlockChance:72,unlockHint:'미션 6개를 완료하면 더 잘 등장해요.',unlockText:'밝은 느낌의 중간 등급'},tulip:{rarity:'일반',grade:'B',unlockType:'missions',unlockValue:7,unlockChance:68,unlockHint:'미션 7개를 완료하면 열릴 확률이 높아져요.',unlockText:'도감에서 자주 보이는 색감'},lilac:{rarity:'일반',grade:'B',unlockType:'missions',unlockValue:8,unlockChance:64,unlockHint:'미션 8개를 완료하면 자연스럽게 늘어요.',unlockText:'부드러운 보라빛의 중급 등급'},hydrangea:{rarity:'희귀',grade:'A',unlockType:'missions',unlockValue:9,unlockChance:56,unlockHint:'미션 9개를 완료하면 희귀 식물이 열립니다.',unlockText:'조건이 더 까다로운 희귀 식물'},lily:{rarity:'희귀',grade:'A',unlockType:'missions',unlockValue:10,unlockChance:52,unlockHint:'미션 10개를 완료하면 희귀 씨앗이 나타나요.',unlockText:'정성 어린 관리가 필요한 식물'},aster:{rarity:'희귀',grade:'A',unlockType:'coins',unlockValue:120,unlockChance:46,unlockHint:'Green Coin 120개를 모으면 열릴 확률이 생겨요.',unlockText:'코인으로 확보하는 희귀 식물'},cosmos:{rarity:'희귀',grade:'A',unlockType:'coins',unlockValue:160,unlockChance:42,unlockHint:'Green Coin 160개를 쌓아야 해요.',unlockText:'풍성한 꽃잎을 가진 중상급 등급'},marigold:{rarity:'희귀',grade:'A',unlockType:'coins',unlockValue:200,unlockChance:38,unlockHint:'Green Coin 200개가 모이면 도전할 수 있어요.',unlockText:'활기찬 노란빛의 희귀 식물'},hyacinth:{rarity:'희귀',grade:'A',unlockType:'coins',unlockValue:240,unlockChance:34,unlockHint:'Green Coin 240개를 모으면 등장 확률이 생깁니다.',unlockText:'상큼한 향을 닮은 희귀 등급'},camomile:{rarity:'희귀',grade:'B',unlockType:'coins',unlockValue:280,unlockChance:30,unlockHint:'Green Coin 280개를 모으면 도감에 추가돼요.',unlockText:'차분한 분위기의 중상급 식물'},poinsettia:{rarity:'희귀',grade:'B',unlockType:'coins',unlockValue:320,unlockChance:26,unlockHint:'Green Coin 320개가 필요해요.',unlockText:'따뜻한 색감의 고급 등급'},geranium:{rarity:'희귀',grade:'B',unlockType:'coins',unlockValue:360,unlockChance:22,unlockHint:'Green Coin 360개를 모으면 새 장면이 열려요.',unlockText:'풍부한 색감을 가진 희귀 씨앗'},lotus:{rarity:'영웅',grade:'S',unlockType:'coins',unlockValue:400,unlockChance:18,unlockHint:'Green Coin 400개를 모아야 영웅급이 열립니다.',unlockText:'고급스럽고 특별한 등장 확률'},orchid:{rarity:'영웅',grade:'S',unlockType:'coins',unlockValue:440,unlockChance:16,unlockHint:'Green Coin 440개가 필요해요.',unlockText:'우아한 비율의 영웅 등급'},snowdrop:{rarity:'영웅',grade:'S',unlockType:'coins',unlockValue:480,unlockChance:14,unlockHint:'Green Coin 480개를 모으면 문이 열려요.',unlockText:'서늘한 분위기의 특별 식물'},magnolia:{rarity:'영웅',grade:'S',unlockType:'coins',unlockValue:520,unlockChance:12,unlockHint:'Green Coin 520개를 모으면 도전할 수 있어요.',unlockText:'고급스러운 화사함이 돋보여요'},eucalyptus:{rarity:'영웅',grade:'S',unlockType:'coins',unlockValue:560,unlockChance:10,unlockHint:'Green Coin 560개를 모으면 상위 등급에 가깝습니다.',unlockText:'신비로운 향을 연상시키는 식물'},rosemary:{rarity:'영웅',grade:'S',unlockType:'coins',unlockValue:600,unlockChance:9,unlockHint:'Green Coin 600개가 필요해요.',unlockText:'정원이 풍성해지는 특별 등급'},basil:{rarity:'영웅',grade:'S',unlockType:'coins',unlockValue:640,unlockChance:8,unlockHint:'Green Coin 640개를 모으면 더 특별해집니다.',unlockText:'은은한 생명력을 느끼는 식물'},orangeblossom:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:680,unlockChance:6,unlockHint:'Green Coin 680개를 모으면 전설급이 열립니다.',unlockText:'드물게 등장하는 전설 등급'},daisy:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:720,unlockChance:5,unlockHint:'Green Coin 720개를 모아야 해요.',unlockText:'눈에 띄는 화사함의 전설 식물'},lavender:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:760,unlockChance:4,unlockHint:'Green Coin 760개가 모이면 전설급이 열립니다.',unlockText:'부드러운 색감의 특별 등급'},hibiscus:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:800,unlockChance:3,unlockHint:'Green Coin 800개가 필요해요.',unlockText:'고급스러운 전설급 꽃'},azalea:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:840,unlockChance:3,unlockHint:'Green Coin 840개를 모으면 관찰할 수 있어요.',unlockText:'희귀한 색채의 전설 식물'},iris:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:880,unlockChance:2,unlockHint:'Green Coin 880개를 모으면 확률이 열립니다.',unlockText:'전설급으로 분류되는 고급 식물'},peony:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:920,unlockChance:2,unlockHint:'Green Coin 920개를 쌓아야 해요.',unlockText:'화려한 꽃잎의 전설 등급'},snapdragon:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:960,unlockChance:1.5,unlockHint:'Green Coin 960개가 쌓이면 희소성이 올라갑니다.',unlockText:'드물게 발견되는 전설 씨앗'},sweetpea:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1000,unlockChance:1,unlockHint:'Green Coin 1000개로 최상급을 노려보세요.',unlockText:' 최상위 전설 등급'},bluebell:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1040,unlockChance:1,unlockHint:'Green Coin 1040개를 모으면 거의 전설급입니다.',unlockText:'하늘빛을 닮은 특별 식물'},camellia:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1080,unlockChance:0.8,unlockHint:'Green Coin 1080개를 모아야 해요.',unlockText:'고급스러운 장식형 전설 식물'},lupine:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1120,unlockChance:0.8,unlockHint:'Green Coin 1120개를 모아야 드뭅니다.',unlockText:'정원을 더욱 화려하게 만드는 식물'},forgetmenot:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1160,unlockChance:0.7,unlockHint:'Green Coin 1160개가 필요해요.',unlockText:'사라지기 쉬운 특별한 꽃'},alstroemeria:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1200,unlockChance:0.6,unlockHint:'Green Coin 1200개를 모으면 전설급권이 열립니다.',unlockText:'색감의 조합이 화려한 식물'},fuchsia:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1240,unlockChance:0.5,unlockHint:'Green Coin 1240개가 모이면 마지막 희귀함으로 다가와요.',unlockText:'강렬한 색감의 전설 등급'},mint:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1280,unlockChance:0.4,unlockHint:'Green Coin 1280개를 모으면 희귀도가 높아집니다.',unlockText:'은은한 향을 품은 전설 식물'},ivy:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1320,unlockChance:0.4,unlockHint:'Green Coin 1320개를 모으면 한층 특별해집니다.',unlockText:'정원 경계선을 아름답게 만드는 식물'},agapanthus:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1360,unlockChance:0.3,unlockHint:'Green Coin 1360개를 모아야 드물게 열립니다.',unlockText:'하늘빛 계열의 전설 식물'},poppy:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1400,unlockChance:0.3,unlockHint:'Green Coin 1400개가 필요해요.',unlockText:'강렬한 붉음의 전설 등급'},begonia:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1440,unlockChance:0.2,unlockHint:'Green Coin 1440개를 모으면 고급 씨앗이 열립니다.',unlockText:'다채로운 색으로 돋보이는 식물'},zinnia:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1480,unlockChance:0.2,unlockHint:'Green Coin 1480개가 모이면 아주 희귀해져요.',unlockText:'화려한 색이 번지는 전설 식물'},calla:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1520,unlockChance:0.1,unlockHint:'Green Coin 1520개를 모으면 전설급 확률이 생깁니다.',unlockText:'우아한 형태의 최상급 식물'},gerbera:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1560,unlockChance:0.1,unlockHint:'Green Coin 1560개를 모으면 거의 전설급입니다.',unlockText:'눈부신 색의 마지막 꽃'},carnation:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1600,unlockChance:0.08,unlockHint:'Green Coin 1600개까지 모으면 특별해집니다.',unlockText:'사랑과 기쁨을 담은 전설 식물'},foxglove:{rarity:'전설',grade:'SS',unlockType:'coins',unlockValue:1640,unlockChance:0.05,unlockHint:'Green Coin 1640개를 모으면 최고급이 열립니다.',unlockText:'도감의 정점에 가까운 최상급 식물'}};
+  Object.values(plantUnlockMeta).forEach(meta=>{
+    if(meta.unlockType==='coins'){
+      meta.unlockType='missions';
+      meta.unlockValue=Math.max(11,Math.ceil(meta.unlockValue/20));
+      meta.unlockHint=`누적 미션 ${meta.unlockValue}회를 완료하면 도전할 수 있어요.`;
+      meta.unlockText='꾸준한 미션 달성으로 열리는 식물';
+    }
+  });
+  let activeMissions=[];
+  let state={lux:userData.lux||2400,temp:userData.temp||24,humidity:userData.humidity||55,planned:userData.exerciseTime||40,skin:userData.skin||'sensitive',exerciseType:userData.exerciseType||'걷기',met:3.5,intensity:0,sportDesc:'기준 운동',friendName:'',friendMessage:'',missionCycle:userData.missionCycle||0,totalMissions:Number.isFinite(userData.totalMissions)?userData.totalMissions:(userData.missions||[]).filter(mission=>mission.completed).length,coins:Number.isFinite(userData.coins)?userData.coins:120,ownedPlants:userData.ownedPlants||['basic'],selectedPlant:userData.selectedPlant||'basic',spentCoins:userData.spentCoins||0};
+
+  function meetsPlantMissionRequirement(plant){
+    const meta=plantUnlockMeta[plant.id]||defaultPlantMeta;
+    return meta.unlockType==='default'||state.totalMissions>=Number(meta.unlockValue||0);
+  }
+
+  function persistUserData(){
+    const payload={...userData,nickname:$('#nicknameInput').value,gender:$('#genderSelect').value,age:Number($('#ageInput').value)||25,height:Number($('#heightInput').value)||170,weight:Number($('#weightInput').value)||60,skin:state.skin,exerciseType:state.exerciseType,exerciseTime:state.planned,lux:state.lux,temp:state.temp,humidity:state.humidity,missions:JSON.parse(JSON.stringify(activeMissions)),missionCycle:state.missionCycle,totalMissions:state.totalMissions,coins:state.coins,friends:getFriendRanking(),ownedPlants:state.ownedPlants,selectedPlant:state.selectedPlant,spentCoins:state.spentCoins,lastUpdated:Date.now()};
+    saveUserData(payload);
+  }
+
+  function applyPlantTheme(plant){
+    const gardenPlant=$('#plant');
+    if(!gardenPlant) return;
+    const stem=gardenPlant.querySelector('.stem');
+    const leaves=[...gardenPlant.querySelectorAll('.leaf')];
+    const flower=gardenPlant.querySelector('.flower');
+    stem.style.background=plant.stemColor||'#4a915e';
+    stem.style.width=plant.stemWidth||'7px';
+    stem.style.height=plant.stemHeight||'70px';
+    stem.style.clipPath=plant.stemClipPath||'none';
+    leaves.forEach((leaf,index)=>{
+      leaf.style.display=plant.leafDisplay||'block';
+      leaf.style.background=plant.leafColor||'#67ab63';
+      const transforms=['rotate(-21deg)','rotate(103deg)','rotate(75deg)'];
+      leaf.style.transform=plant.leafTransforms?.[index] || transforms[index] || 'rotate(0deg)';
+    });
+    flower.style.background=plant.flowerColor||'#f2b7c0';
+    flower.style.boxShadow=plant.flowerShadow||'14px 0 #f2b7c0,-14px 0 #f2b7c0,0 14px #f2b7c0,0 -14px #f2b7c0';
+    flower.style.transform=`scale(${plant.flowerScale||'0.65'})`;
+    flower.style.setProperty('--flower-center', plant.flowerCenterColor||'#f3bd55');
+  }
+
+  function render(){
+    const uv=calculateUV(state.lux);
+    const uvLevel=calculateUVLevel(uv);
+    const uvFactor=getUVFactor(uv);
+    const bmi=calculateBMI(Number($('#heightInput').value)||userData.height, Number($('#weightInput').value)||userData.weight);
+    const bmiFactor=getBMIFactor(bmi);
+    const skinFactor=getSkinFactor(state.skin);
+    const ageFactor=getAgeFactor(Number($('#ageInput').value)||userData.age);
+    const genderFactor=getGenderFactor($('#genderSelect').value);
+    const exerciseIntensity=getExerciseIntensity(state.exerciseType);
+    const exerciseFactor=calculateExerciseFactor(exerciseIntensity);
+    const riskScore=calculateRiskScore({uvFactor,exerciseTime:Number(state.planned),skinFactor,exerciseFactor,ageFactor,bmiFactor,genderFactor});
+    const missionState=Object.fromEntries($$('.mission input').map(input=>[input.dataset.missionId,input.checked]));
+    const adjustedRisk=applyMissionBonus(riskScore,missionState);
+    const accumulatedUV=calculateAccumulatedUV(uv,Number(state.planned));
+    const riskLevel=calculateRiskLevel(adjustedRisk);
+    const remainingTime=calculateRemainingTime(adjustedRisk,accumulatedUV);
+    const heat=state.temp>=32||state.temp<=0;
+    const humid=state.humidity>=80;
+
+    const l=levels.find(x=>uv<=x.max) || levels[0];
+    document.documentElement.style.setProperty('--accent',l.color);
+    $('#luxText').textContent=state.lux.toLocaleString();
+    $('#luxInput').value=state.lux;
+    $('#luxRange').value=state.lux;
+    $('#uvText').textContent=uv.toFixed(1);
+    $('#riskName').textContent=riskLevel;
+    $('#riskName').style.color=l.color;
+    $('#riskDesc').textContent=l.desc;
+    $('#statusTip').textContent=l.tip;
+    $('#riskBar').style.cssText=`width:${Math.max(10,Math.min(100,adjustedRisk/3))}%;background:${l.color}`;
+    $('#tempText').textContent=state.temp+'°C';
+    $('#humidityText').textContent=state.humidity+'%';
+    $('#tempRange').value=state.temp;
+    $('#humidityRange').value=state.humidity;
+
+    let weather='쾌적한 야외 운동 날씨예요.',icon='☀️';
+    if(state.temp>=32){weather='더위가 강해요. 시원한 시간대에 짧게 운동하세요.';icon='🥵';}
+    else if(state.temp<=0){weather='추운 날씨예요. 준비 운동을 충분히 해주세요.';icon='🥶';}
+    else if(humid){weather='습도가 높아요. 땀 배출이 어려우니 수분을 자주 보충하세요.';icon='💧';}
+    else if(state.temp>=28){weather='따뜻한 날씨예요. 충분한 수분 섭취를 권장해요.';icon='🌤️';}
+    $('#weatherIcon').textContent=icon;
+    $('#weatherTip').textContent=weather;
+
+    const missionCount=$$('.mission input').filter(input=>input.checked).length;
+    $('#missionCount').textContent=`${missionCount} / 4`;
+    $('#recTime').textContent=remainingTime;
+    $('#formulaText').textContent=`위험도 ${adjustedRisk.toFixed(1)} · 누적UV ${accumulatedUV.toFixed(1)} · 남은 권장 ${remainingTime}분`;
+    $('#sportMeta').innerHTML=`평균 MET ${state.met} · 상대 강도 ${exerciseIntensity}<br>${state.sportDesc}`;
+    $('#intensityText').textContent=exerciseIntensity<=1?'저강도':exerciseIntensity<=3?'중강도':exerciseIntensity<=4?'고강도':'매우 고강도';
+    let activity=uv>=9&&state.temp>=32?'실내 운동 또는 수영':uv>=9?'수영 또는 실내 자전거':state.temp>=32?'수영 또는 가벼운 걷기':exerciseIntensity>=5?'가벼운 걷기 또는 수영':'현재 선택 운동';
+    $('#aiWorkout').innerHTML=`<b>${activity}</b>을 추천해요.<br>UV ${uv.toFixed(1)}, ${state.temp}°C, 습도 ${state.humidity}%와 운동 강도를 종합 분석했습니다.`;
+    $('#forecast').textContent=uv>=7?'오후 2시 UV가 가장 높을 것으로 예상돼요. 오후 4시 이후 또는 내일 오전 운동을 추천해요.':'오늘은 오전·오후 모두 비교적 무난해요. 오후 4시 이후가 가장 쾌적합니다.';
+    const exposureScore=accumulatedUV+adjustedRisk;
+    $('#exposure').textContent=exposureScore>=300?'높음':exposureScore>=120?'보통':'낮음';
+    $('#skinRisk').textContent=exposureScore>=300?'높음':exposureScore>=120?'주의':'낮음';
+    $('#sunscreen').textContent=uv>=6?'SPF 50+ PA++++':'SPF 30+ PA+++';
+    $('#reapply').textContent=missionState.sunscreen?'선크림을 착용했어요. 땀을 많이 흘리면 80분 후, 그 외에는 2시간 후 덧바르세요.':'운동 20분 전 선크림을 바르세요. 자외선이 강하면 SPF 50+를 권장해요.';
+    let notice=heat?'기온 스트레스에 주의하세요. 15분마다 쉬고<br>물과 전해질을 충분히 보충하세요.':humid?'습도가 높아 체감 피로가 커요.<br>통풍이 좋은 옷과 충분한 물을 챙겨주세요.':uv>=6?'햇살이 강해요. 20분마다 그늘에서 쉬고<br>물과 선크림을 꼭 챙겨주세요.':'운동 전후로 물을 충분히 마시고<br>선크림을 챙겨주세요.';
+    $('#recText').innerHTML=notice;
+    $('#warning').style.display=state.planned>remainingTime?'block':'none';
+
+    const growthScore=Math.max(0,Math.min(100,missionCount*25 + (adjustedRisk<120?20:0) - (adjustedRisk>180?20:0)));
+    const plantStatus=calculatePlantStatus(growthScore);
+    const selectedPlantData=plantLibrary.find(item=>item.id===state.selectedPlant)||plantLibrary[0];
+    const growthSteps=['씨앗','새싹','잎','꽃봉오리','꽃','나무'];
+    const activeStep=Math.min(growthSteps.length-1,Math.floor(growthScore/17));
+    $('#growthSteps').innerHTML=growthSteps.map((step,index)=>`<div class="growth-step ${index<activeStep?'done':index===activeStep?'active':''}">${step}</div>`).join('');
+    $('#growthBar').style.width=growthScore+'%';
+    $('#plant').className=`plant ${plantStatus.className} plant--${selectedPlantData.cssClass}${adjustedRisk>180?' wilt':''}`;
+    applyPlantTheme(selectedPlantData);
+    $('#plantStage').textContent=`${plantStatus.stage} · ${growthScore}% · ${selectedPlantData.name}`;
+    $('#growthMeta').textContent=`${plantStatus.message} ${plantStatus.nextMessage}`;
+    const currentCoins=Math.max(0,state.coins-state.spentCoins);
+    renderPlantCollection(currentCoins);
+    const nextPlant=plantLibrary.find(plant=>!state.ownedPlants.includes(plant.id)&&!meetsPlantMissionRequirement(plant));
+    const nextMeta=plantUnlockMeta[nextPlant?.id]||defaultPlantMeta;
+    const progressText=nextMeta.unlockType==='missions' ? `누적 미션 완료 ${state.totalMissions}회 · 다음 목표 ${nextMeta.unlockValue}회` : '';
+    const unlockText=nextPlant ? `${nextPlant.name}은 ${nextMeta.unlockHint} 누적 미션 ${nextMeta.unlockValue}회가 필요해요.` : state.ownedPlants.length===plantLibrary.length ? '모든 식물을 모았어요. 다음엔 새로운 도감을 기대해보세요.' : '남은 식물은 모두 뽑기 가능한 상태예요.';
+    $('#collectionIntro').innerHTML=`<b id="seedCount">${missionCount===4?'새 씨앗 1개 획득!':'새 씨앗 '+missionCount+'개'}</b> · 도감 <span id="plantCount">${state.ownedPlants.length} / ${plantLibrary.length}종</span><br>${progressText} · ${unlockText} <a class="text-link" href="#plantCollection">도감 전체 보기</a>`;
+    $('#coins').textContent=currentCoins;
+    $('#rankingText').textContent=getFriendRanking().length ? `${getFriendRanking().length + 1}위` : '1위';
+    renderFriends();
+    persistUserData();
+  }
+
+  function renderPlantCollection(currentCoins=Number($('#coins').textContent)||0){
+    const collection=$('#plantCollection');
+    const missionCount=$$('.mission input').filter(input=>input.checked).length;
+    const coins=currentCoins;
+    collection.innerHTML='';
+    plantLibrary.forEach(plant=>{
+      const unlocked=state.ownedPlants.includes(plant.id);
+      const meta=plantUnlockMeta[plant.id]||defaultPlantMeta;
+      const condition=meta.unlockType==='default' ? '기본 보유 식물' : `누적 미션 ${meta.unlockValue}회 완료`;
+      const progressText=`현재 ${state.totalMissions}/${meta.unlockValue}회`;
+      const availableForDraw=meetsPlantMissionRequirement(plant);
+      const button=document.createElement('button');
+      button.className=`plant-option ${unlocked?'':availableForDraw?'available':'locked'} ${state.selectedPlant===plant.id?'active':''}`;
+      button.type='button';
+      button.disabled=!unlocked;
+      button.innerHTML=`<span class="emoji">${plant.icon}</span><span><strong>${plant.name}</strong><br><small>${meta.rarity} · ${meta.grade}</small><br><small>${condition}</small><br><small>${unlocked?'보유 중':availableForDraw?'뽑기 가능':progressText}</small></span>`;
+      button.onclick=()=>{
+        if(!unlocked) return;
+        state.selectedPlant=plant.id;
+        render();
+      };
+      collection.appendChild(button);
+    });
+  }
+
+  function renderFriends(){
+    const friends=getFriendRanking();
+    const list=$('#friendList');
+    list.innerHTML='';
+    if(!friends.length){
+      list.innerHTML='<div class="social"><b>아직 친구가 없어요</b><span>친구 요청을 보내고 정원을 함께 키워보세요.</span></div>';
+      return;
+    }
+    friends.forEach(friend=>{
+      const item=document.createElement('div');
+      item.className='social';
+      item.innerHTML=`<b>${friend.targetId||friend.userId}</b><span>성장 72% · 오늘 물 주기</span>`;
+      list.appendChild(item);
+    });
+  }
+
+  function syncFieldValues(){
+    $('#nicknameInput').value=userData.nickname||'';
+    $('#genderSelect').value=userData.gender||'male';
+    $('#ageInput').value=userData.age||25;
+    $('#heightInput').value=userData.height||170;
+    $('#weightInput').value=userData.weight||60;
+    $$('.mission input').forEach((input,index)=>{const mission=userData.missions?.[index]; if(mission){ input.checked=mission.completed||false; input.parentElement.classList.toggle('done',input.checked); }});
+    const sports=$$('#sports .sport');
+    const activeSport=sports.find(button=>button.textContent.trim()===state.exerciseType);
+    if(activeSport){sports.forEach(button=>button.classList.remove('on'));activeSport.classList.add('on');state.met=+activeSport.dataset.met;state.intensity=+activeSport.dataset.level;state.sportDesc=activeSport.dataset.desc;}
+    $$('#times button').forEach(button=>button.classList.toggle('on',Number(button.dataset.time)===state.planned));
+  }
+
+  $('#luxRange').oninput=e=>{state.lux=+e.target.value;render()};
+  $('#luxInput').oninput=e=>{state.lux=Math.max(0,Math.min(100000,+e.target.value||0));render()};
+  $('#tempRange').oninput=e=>{state.temp=+e.target.value;render()};
+  $('#humidityRange').oninput=e=>{state.humidity=+e.target.value;render()};
+  $('#distanceRange').oninput=e=>{let km=+e.target.value;$('#distanceText').textContent=km+' km';$('#carbon').textContent=(km*170).toLocaleString()+'g'};
+  $$('#skins .choice').forEach(button=>button.onclick=()=>{$$('#skins .choice').forEach(x=>x.classList.remove('on'));button.classList.add('on');state.skin=button.dataset.skin;render()});
+  $$('#sports .sport').forEach(button=>button.onclick=()=>{$$('#sports .sport').forEach(x=>x.classList.remove('on'));button.classList.add('on');state.exerciseType=button.textContent.trim();state.met=+button.dataset.met;state.intensity=+button.dataset.level;state.sportDesc=button.dataset.desc;render()});
+  $$('#times button').forEach(button=>button.onclick=()=>{$$('#times button').forEach(x=>x.classList.remove('on'));button.classList.add('on');state.planned=+button.dataset.time;render()});
+  $$('.mission input').forEach(input=>input.onchange=()=>{input.parentElement.classList.toggle('done',input.checked);render()});
+  $('#buyPot').onclick=()=>{
+    const currentCoins=Math.max(0,state.coins-state.spentCoins);
+    if(currentCoins<80){$('#shopMessage').textContent='Green Coin이 부족해요.'; return;}
+    const availablePlants=plantLibrary.filter(plant=>!state.ownedPlants.includes(plant.id));
+    if(!availablePlants.length){$('#shopMessage').textContent='이미 모든 식물을 모았어요.'; return;}
+    const pool=availablePlants.filter(meetsPlantMissionRequirement);
+    if(!pool.length){$('#shopMessage').textContent=`누적 미션 ${state.totalMissions}회로는 아직 뽑기 가능한 새 식물이 없어요.`; return;}
+    state.spentCoins+=80;
+    const targetPlant=pool[Math.floor(Math.random()*pool.length)];
+    const meta=plantUnlockMeta[targetPlant.id]||defaultPlantMeta;
+    state.ownedPlants=[...new Set([...state.ownedPlants,targetPlant.id])];
+    state.selectedPlant=targetPlant.id;
+    $('#shopMessage').textContent=`${targetPlant.name}를 획득했어요! 누적 미션 조건을 달성한 식물은 반드시 획득됩니다.`;
+    render();
+  };
+  ['nicknameInput','genderSelect','ageInput','heightInput','weightInput'].forEach(id=>{$(`#${id}`).oninput=()=>render();});
+  $('#friendRequestBtn').onclick=()=>{const friendName=$('#friendInput').value.trim();if(!friendName){$('#friendMessage').textContent='닉네임을 입력해 주세요.';return;}sendFriendRequest(userData.nickname||'me',friendName);$('#friendMessage').textContent=`${friendName}에게 친구 요청을 보냈어요.`;renderFriends();};
+  $('#waterFriendBtn').onclick=()=>{giveWater('friend');$('#friendMessage').textContent='친구 식물에 물을 주었어요.';};
+  function renderMissionSet(missions){
+    activeMissions=missions.map(mission=>({...mission,completed:Boolean(mission.completed),counted:Boolean(mission.counted)}));
+    const list=$('.mission-list');
+    list.innerHTML='';
+    activeMissions.forEach((mission,index)=>{
+      const label=document.createElement('label');
+      label.className='mission';
+      const input=document.createElement('input');
+      input.type='checkbox';
+      input.dataset.missionId=mission.id;
+      input.dataset.missionIndex=index;
+      input.checked=Boolean(mission.completed);
+      label.append(input,document.createTextNode(mission.label));
+      label.classList.toggle('done',input.checked);
+      input.onchange=()=>{
+        const activeMission=activeMissions[Number(input.dataset.missionIndex)];
+        activeMission.completed=input.checked;
+        if(input.checked&&!activeMission.counted){
+          activeMission.counted=true;
+          state.totalMissions+=1;
+        }
+        label.classList.toggle('done',input.checked);
+        if(activeMissions.every(item=>item.completed)) completeMissionCycle();
+        render();
+      };
+      list.appendChild(label);
+    });
+  }
+
+  function completeMissionCycle(){
+    state.coins+=70;
+    state.missionCycle+=4;
+    renderMissionSet(generateDailyMission(state.missionCycle));
+    $('#shopMessage').textContent='미션 4개를 모두 완료해 70 GC를 받았어요! 새 미션이 시작됩니다.';
+  }
+
+  function addSensorStatus(){
+    const status=document.createElement('small');
+    status.id='sensorStatus';
+    status.style.cssText='display:block;margin-top:8px;color:var(--leaf);font-weight:700';
+    status.textContent='센서 연결 확인 중…';
+    $('#weatherTip').after(status);
+  }
+
+  async function refreshSensor(){
+    try{
+      const response=await fetch('/api/sensor',{cache:'no-store'});
+      if(!response.ok) throw new Error('sensor API unavailable');
+      const sensor=await response.json();
+      if(!sensor.connected) throw new Error('sensor not connected');
+      const values=[sensor.temperature,sensor.humidity,sensor.lux].map(Number);
+      if(values.some(value=>!Number.isFinite(value))) throw new Error('invalid sensor data');
+      state.temp=values[0];
+      state.humidity=values[1];
+      state.lux=values[2];
+      $('#sensorStatus').textContent=`센서 실시간 연결 · ${new Date(sensor.updatedAt).toLocaleTimeString('ko-KR')}`;
+      render();
+    }catch(error){
+      const status=$('#sensorStatus');
+      if(status) status.textContent='센서 대기 중 · 수집 서버를 실행하면 자동 연결됩니다.';
+    }
+  }
+
+  $('#today').textContent=new Intl.DateTimeFormat('ko-KR',{month:'long',day:'numeric',weekday:'short'}).format(new Date()).replace('요일','');
+  syncFieldValues();
+  const savedMissions=Array.isArray(userData.missions) && userData.missions.length===4 && userData.missions.every(mission=>typeof mission.id==='string') ? userData.missions : generateDailyMission(state.missionCycle);
+  renderMissionSet(savedMissions);
+  addSensorStatus();
+  render();
+  refreshSensor();
+  setInterval(render,60000);
+  setInterval(refreshSensor,2000);
+</script>
+</body></html>
